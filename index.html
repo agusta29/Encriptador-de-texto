@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Encriptador de texto</title>
+    <link rel="icon" type="favicon" href="img/favicon.icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      
+    </header>
+    <main>
+      <dialog>
+        <p>texto copiado con exito</p>
+        <form method="dialog">
+          <button>OK</button>
+        </form>
+      </dialog>
+
+      <form>
+        <textarea
+          placeholder="Ingrese el texto Aqui: "
+          onkeypress="return ((event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 32))"
+        ></textarea>
+        
+        <div class="btn-container">
+          <legend>
+            <h3> <i class='bx bx-error-alt'style='color:#f85d03'></i>No Incluyas caracteres especiales.</h3>
+          </legend>
+          <button class="encrypt-btn btn">Encriptar</button>
+          <button class="decrypt-btn btn">Desencriptar</button>
+        </div>
+      </form>
+
+      <section class="result-box">
+        <div class="result-text-container inactive">
+          <p>Encriptador de texto</p>
+          <button class="copy-btn btn">Copiar</button>
+        </div>
+
+        <div class="result-none-container ">
+          <div class="result-img" >
+            <img src="img/logofocal.png" alt="logo">
+          </div>
+
+          <h1>Ingresa el texto que desees encriptar o desencriptar.</h1>
+        </div>
+      </section>
+      <br>
+    </main>
+
+    <footer>
+      <p>
+        Agustina Jimenez 
+      </p>
+      
+      <div class="social">
+        <a href="https://github.com/agusta29" target="_blank">
+          <i class='bx bxl-github'></i>
+          <p>Github</p>
+        </a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
